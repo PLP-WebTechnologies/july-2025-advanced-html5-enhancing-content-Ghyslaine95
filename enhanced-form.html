@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Form Overview</h2>
+      <p>This form demonstrates various HTML5 input types, validation features, and semantic layout.</p>
+      <ul>
+        <li>Text, email, password, date, number, range inputs</li>
+        <li>Radio buttons, checkboxes, select dropdowns</li>
+        <li>Validation using <code>required</code>, <code>pattern</code>, and <code>min/max</code></li>
+        <li>Accessibility with labels and semantic tags</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>User Information Form</h2>
+      <form action="/submit" method="POST" autocomplete="on">
+        <div>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="GIGI" required />
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required />
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="1" max="120" required />
+        </div>
+
+       
+
+        <div>
+          <label for="range">Satisfaction Level:</label>
+          <input type="range" id="range" name="satisfaction" min="0" max="10" />
+        </div>
+
+        <div>
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div>
+          <label for="interests">Interests:</label>
+          <input type="checkbox" id="coding" name="interests" value="coding" />
+          <label for="coding">Coding</label>
+          <input type="checkbox" id="music" name="interests" value="music" />
+          <label for="music">Music</label>
+          <input type="checkbox" id="sports" name="interests" value="sports" />
+          <label for="sports">Sports</label>
+        </div>
+
+        <div>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select...</option>
+            <option value="burundi">Burundi</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+        </div>
+
+        <div>
+          <label for="readonly">Referral Code:</label>
+          <input type="text" id="readonly" name="referral" value="ABC123" readonly />
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Sample Data Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aline</td>
+            <td>aline@example.com</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Richard</td>
+            <td>richard@example.com</td>
+            <td>Burundi</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      
+      <video src="plp.mp4"  width="600" height="360" controls></video>
+      <h2>Audio</h2>
+      
+      <audio src="DADJU - Lionne (Clip Officiel).mp3" controls></audio>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ghyslaine. All rights reserved.</p>
+  </footer>
+</body>
+</html>
